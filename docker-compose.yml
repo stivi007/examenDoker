@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  vuejs:
+    hostname: vuejs
+    build: ./client
+    ports:
+      - "80:80"
+  server:
+    build: ./server
+    ports:
+      - "8000:8000"
